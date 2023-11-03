@@ -49,18 +49,5 @@ go-comment -k your_api_key -i input.ts -o output.ts
 ```
 The tool will adapt the comments format to your file type.
 
-### Examples
-Here are some example usages:
-
-To add comments to a Go code file and save it as output.go:
-```shell
-go-comment -k your_api_key -i input.go -o output.go
-```
-
-To add comments to a TypeScript code file and save it as output.ts:
-```shell
-go-comment -k your_api_key -i input.ts -o output.ts
-```
-
 ### License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
