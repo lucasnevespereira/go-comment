@@ -1,6 +1,6 @@
 # Go-Comment CLI Tool
 
-The Go-Comment CLI tool is designed to help you automatically add descriptive comments to your Go code. It utilizes the power of the OpenAI GPT-3.5 Turbo model to generate comments for your code, making it more readable and understandable.
+The Go-Comment CLI tool is designed to help you automatically add descriptive comments to your code.
 
 ## Features
 
@@ -13,7 +13,7 @@ To install the Go-Comment CLI tool, follow these steps:
 
 Clone this repository:
 ```shell
-git clone https://github.com/your/repo.git
+git clone https://github.com/lucasnevespereira/go-comment
 ```
 Navigate to the cloned repository:
 ```shell
@@ -63,4 +63,4 @@ go-comment -k your_api_key -i input.ts -o output.ts
 ```
 
 ### License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
