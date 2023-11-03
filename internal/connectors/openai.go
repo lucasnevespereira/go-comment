@@ -2,7 +2,6 @@ package openai
 
 import (
 	"encoding/json"
-	"fmt"
 
 	"github.com/go-resty/resty/v2"
 	"github.com/pkg/errors"
@@ -54,8 +53,6 @@ func (c *OpenAI) GetCompletion(params CompletionParams) (string, error) {
 	if err != nil {
 		return "", errors.Wrap(err, "GetCompletion calling endpoint")
 	}
-
-	fmt.Println(string(response.Body()))
 
 	var chatCompletion ChatCompletion
 	if err := json.Unmarshal(response.Body(), &chatCompletion); err != nil {

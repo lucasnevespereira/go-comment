@@ -49,8 +49,6 @@ func run(cmd *cobra.Command, args []string) {
 	generatingMessage := "Generating comments..."
 	fmt.Printf("%s \n", generatingMessage)
 
-	fmt.Println(prompt)
-
 	generatedComments, err := client.GetCompletion(openai.CompletionParams{
 		Model:     "gpt-3.5-turbo-16k-0613",
 		Prompt:    prompt,
@@ -62,7 +60,6 @@ func run(cmd *cobra.Command, args []string) {
 	}
 
 	extractedCode := extractCodeBetweenFences(generatedComments, fileType)
-	fmt.Printf("extracted:  %v \n", extractedCode)
 	writeCommentsToFile(extractedCode)
 
 	fmt.Print("\n")
